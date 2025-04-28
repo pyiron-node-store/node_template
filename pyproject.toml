@@ -33,8 +33,11 @@ authors = [
 [project.license]
 file = "LICENSE"
 
-[project.entry-points."pyiron_node_store.math"]
-math = "node_template:math"
+[project.entry-points."pyiron_node_store"]
+math = "node_template.math"
+
+[project.entry-points."pyiron_node_store.math_nodes"]
+add = "node_template.math"
 
 [project.urls]
 Homepage = "https://github.com/pyiron-node-store/node_template"
