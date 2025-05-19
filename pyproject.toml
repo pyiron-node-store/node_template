@@ -33,11 +33,8 @@ authors = [
 [project.license]
 file = "LICENSE"
 
-[project.entry-points."pyiron_node_store"]
-math = "node_template.math"
-
-[project.entry-points."pyiron_node_store.math_nodes"]
-add = "node_template.math"
+[project.entry-points."pyiron_node_store"]  # registers to the pyiron_node_store.nodes namespace
+math = "node_template.math"  # the module math, which will be available via pyiron_node_store.nodes.math
 
 [project.urls]
 Homepage = "https://pyiron.org/"
